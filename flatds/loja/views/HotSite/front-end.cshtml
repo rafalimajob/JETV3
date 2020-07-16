@@ -1,6 +1,6 @@
 
 @{
-    ViewBag.Title = "Fale Conosco";
+    ViewBag.Title = "Front End";
     Layout = "~/Views/Shared/Base/_LayoutBreadCrumbContent.cshtml";
 }
 @section breadcrumbs {
@@ -24,7 +24,7 @@
 <div class="ui grid middle aligned center aligned">
     <div class="row">
         <div class="ten wide computer sixteen wide tablet sixteen wide mobile column">
-            @using (Ajax.BeginForm("font-end", "HotSite", new AjaxOptions { HttpMethod = "POST", OnSuccess = "onSuccess", OnFailure = "onFailure" }, new { @class = "ui large form", @id = "formContact" }))
+            @using (Ajax.BeginForm("Contact", "Customer", new AjaxOptions { HttpMethod = "POST", OnSuccess = "onSuccess", OnFailure = "onFailure" }, new { @class = "ui large form", @id = "formContact" }))
             {
                 @Html.AntiForgeryToken()
 
